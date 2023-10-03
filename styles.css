@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+/* Apply a box-sizing border-box to all elements for better layout consistency */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the grid container */
+.grid-container {
+  display:flex;
+
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Style the grid items (cards) */
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    flex-wrap:wrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
